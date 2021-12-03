@@ -1,5 +1,6 @@
 $(".play").click(function(){
   var userChoice = $(".input").val();
+  userChoice = userChoice.toLowerCase();
   var computerChoice = $("computerChoice").val();
   var random = (Math.random()*10);
   console.log(random);
@@ -14,6 +15,9 @@ $(".play").click(function(){
   }else if(random > 2*(10/3) && random < 10){
     $(".computerChoice").text("scissors");
     computerChoice = "scissors";
+  }
+  if (userChoice !== ("rock"||"paper"||"scissors") ){
+    alert("Your input is invalid, please look at the directions");
   }
   
   if(userChoice === computerChoice){

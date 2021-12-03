@@ -1,0 +1,48 @@
+body{
+  background:grey;
+  color:white;
+}
+.row {
+  text-align: center;
+}
+.choices {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+h4,h3,h1,.result{
+  font-family:helvetica;
+  font-weight:400;
+} 
+.input{
+  background:navy;
+  border:1px solid white;;
+  outline:none;
+/*   border-radius:10px; */
+  padding:5px;
+  color:white;
+}
+.play{
+  padding:5px;
+/*   border-radius:10px; */
+  background:red;
+  border:1px solid white;
+  color:white;
+}
+p{
+  font-family:helvetica;
+  font-weight:300;
+}
+.r-p-s-img{
+  width:80%;
+  background:grey;
+  border:2px solid white;
+  transition:0.3s;
+  
+}
+.r-p-s-img:hover{
+  box-shadow:0 0 8px black;
+}
+.result{
+  font-size:20px;
+}
