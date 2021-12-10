@@ -21,8 +21,7 @@ $(".play").click(function(){
     $(".userChoice").text("");
     $(".computerChoice").text("");
     alert("Your input is invalid, please look at the directions");
-  }else {
-    if(userChoice === computerChoice){
+  }else if(userChoice === computerChoice){
     $(".result").text("TIE");
       $(".result").css("color","red");
   }else if(userChoice === "rock" && computerChoice === "scissors"){
@@ -44,8 +43,9 @@ $(".play").click(function(){
     $(".result").text("User wins");
     $(".result").css("color","green");
   }
-    
-  }
+  //NEW IDEA: Add stream of history of who wins and who loses useing the .append()
+  //jquery function
+  
   
   // if(userChoice === computerChoice){
   //   $(".result").text("TIE");
